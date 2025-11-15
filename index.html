@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Tony Chopper – Character Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader">
+    <img src="assets/chopper-base.png" alt="Loading Chopper">
+    <p>Chopper is diagnosing your page… 🩺❄️</p> </div>
+    <canvas id="snowCanvas"></canvas>
+
+    <header>
+        <h1>🐾 Tony Tony Chopper</h1>
+        <p class="subtitle">Cute. Doctor. Reindeer. Monster. Crew Mate.</p>
+    </header>
+
+    <section class="hero">
+        <img src="assets/chopper-base.png" alt="Chopper" class="hero-img">
+        <button id="cottonCandyBtn" class="cute-btn">🍭 Give Cotton Candy</button>
+        <p id="reactionText"></p>
+    </section>
+
+    <section class="about card">
+        <h2>About Chopper</h2>
+        <p>
+            Tony Tony Chopper, the beloved doctor of the Straw Hat Pirates, is a reindeer 
+            who gained human-like abilities after eating the Hito Hito no Mi. 
+            He's sweet, shy, smart, and incredibly brave — especially when 
+            helping others in need.
+        </p>
+        <div class="traits">
+            <span>❄️ From Drum Island</span>
+            <span>🩺 Doctor</span>
+            <span>🍭 Loves Cotton Candy</span>
+            <span>🌸 Adorable</span>
+        </div>
+    </section>
+
+    <section class="forms card">
+        <h2>Transformations</h2>
+        <div class="forms-grid">
+
+            <!-- Template for each form -->
+            <div class="form-card">
+                <img src="assets/forms/brain-point.png" alt="Brain Point">
+                <h3>Brain Point</h3>
+            </div>
+
+            <div class="form-card">
+                <img src="assets/forms/guard-point.png" alt="Guard Point">
+                <h3>Guard Point</h3>
+            </div>
+
+            <div class="form-card">
+                <img src="assets/forms/jump-point.png" alt="Jump Point">
+                <h3>Jump Point</h3>
+            </div>
+
+            <div class="form-card">
+                <img src="assets/forms/heavy-point.png" alt="Heavy Point">
+                <h3>Heavy Point</h3>
+            </div>
+
+            <div class="form-card">
+                <img src="assets/forms/arm-point.png" alt="Arm Point">
+                <h3>Arm Point</h3>
+            </div>
+
+            <div class="form-card">
+                <img src="assets/forms/kungfu-point.png" alt="Kung Fu Point">
+                <h3>Kung Fu Point</h3>
+            </div>
+
+            <div class="form-card">
+                <img src="assets/forms/monster-point.png" alt="Monster Point">
+                <h3>Monster Point</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="doctor-mode card">
+        <h2>Doctor Mode</h2>
+        <p>Toggle Chopper's medical interface.</p>
+        <label class="switch">
+            <input type="checkbox" id="doctorToggle">
+            <span class="slider"></span>
+        </label>
+    </section>
+
+    <footer>
+        <p>Made with 💙</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#dff6ff, #fce4f6);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff7bbf;
+    text-shadow: 0 0 5px white;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-img {
+    width: 250px;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) }
+    50% { transform: translateY(-15px) }
+    100% { transform: translateY(0) }
+}
+
+.cute-btn {
+    margin-top: 1rem;
+    background: #ffb3dd;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.cute-btn:hover {
+    background: #ff8ccc;
+}
+
+#reactionText {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* CARDS */
+.card {
+    background: rgba(255,255,255,0.7);
+    margin: 2rem auto;
+    padding: 1.5rem;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(200,150,210,.3);
+    backdrop-filter: blur(10px);
+}
+
+/* ABOUT */
+.traits span {
+    background: #fff0f7;
+    margin: 0.3rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* FORMS GRID */
+.forms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+.form-card {
+    background: #fffafb;
+    border-radius: 15px;
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.form-card:hover {
+    transform: scale(1.08);
+}
+
+.form-card img {
+    width: 80px;
+}
+
+/* DOCTOR MODE */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input { display: none; }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 25px;
+    top: 0; left: 0; right: 0; bottom: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #5ad1ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* DOCTOR MODE EFFECT */
+.doctor-mode-on {
+    background: #e0faff;
+    border: 2px solid #5ad1ff;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem;
+    color: #777;
+}
+
+/* LOADER */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#dff6ff, #fce4f6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loader img {
+    width: 180px;
+    animation: float 3s ease-in-out infinite;
+}
+
+#loader p {
+    font-size: 1.3rem;
+    color: #ff7bbf;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none;
+}
+#snowCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
